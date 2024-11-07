@@ -4,12 +4,7 @@ public class MaskString {
     private final String VOWELS = "aeiouAEIOU";
 
     public String vowelReplacement(String text) {
-        StringBuilder replacement = new StringBuilder(text);
-        /*for (int i = 0; i < text.length(); i++) {
-            if (VOWELS.indexOf(text.charAt(i)) != -1) {
-                stringBuilder.setCharAt(i, '*');
-            }
-        }*/
+        StringBuilder replacement = new StringBuilder();
 
         text.chars().forEach(c -> {
             if(VOWELS.indexOf(c) != -1) {
