@@ -20,4 +20,8 @@ public class MaskString {
     public static String vowelReplacement(int text) {
         return "Error!";
     }
+
+    public static String vowelReplacement() {
+        return "Error!";
+    }
 }
