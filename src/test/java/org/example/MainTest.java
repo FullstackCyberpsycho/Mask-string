@@ -6,7 +6,8 @@ import org.junit.jupiter.api.Test;
 public class MainTest {
     @Test
     void testVowelReplacement() {
-        String strEx = Main.vowelReplacement("Hello, world!");
+        MaskString maskString = new MaskString();
+        String strEx = maskString.vowelReplacement("Hello, world!");
 
         Assertions.assertEquals(strEx, "H*ll*, w*rld!");
     }
