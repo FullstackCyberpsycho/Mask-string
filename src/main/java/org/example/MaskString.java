@@ -16,12 +16,4 @@ public class MaskString {
 
         return replacement.toString();
     }
-
-    public static String vowelReplacement(int text) {
-        return "Error!";
-    }
-
-    public static String vowelReplacement() {
-        return "Error!";
-    }
 }
