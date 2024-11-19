@@ -20,8 +20,4 @@ public class MaskString {
             return replacement.toString();
         }
     }
-
-    /*public String vowelReplacement(int text) {
-        return "Error! You passed a number and not a string";
-    }*/
 }
