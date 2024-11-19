@@ -6,15 +6,19 @@ public class MaskString {
     public String vowelReplacement(String text) {
         StringBuilder replacement = new StringBuilder();
 
-        text.chars().forEach(c -> {
-            if(VOWELS.indexOf(c) != -1) {
-                replacement.append('*');
-            } else {
-                replacement.append((char) c);
-            }
-        });
+        if (text == null) {
+            return "";
+        } else {
+            text.chars().forEach(c -> {
+                if(VOWELS.indexOf(c) != -1) {
+                    replacement.append('*');
+                } else {
+                    replacement.append((char) c);
+                }
+            });
 
-        return replacement.toString();
+            return replacement.toString();
+        }
     }
 
     /*public String vowelReplacement(int text) {
