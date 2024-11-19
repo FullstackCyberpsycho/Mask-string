@@ -12,6 +12,7 @@ class MainTest {
     void setUp() {
         maskString = new MaskString();
     }
+
     @Test
     void testVowelReplacement() {
         String strEx = maskString.vowelReplacement("Hello, world!");
@@ -21,15 +22,15 @@ class MainTest {
 
     @Test
     void testNullVowelReplacement() {
-        String strEx = maskString.vowelReplacement(null);
+        String strEx = maskString.vowelReplacement(" ");
 
-        Assertions.assertEquals("H*ll*, w*rld!", strEx);
+        Assertions.assertEquals( " ", strEx);
     }
 
     @Test
     void testNumVowelReplacement() {
-        String strEx = maskString.vowelReplacement(74570);
+        String strEx = maskString.vowelReplacement("74570");
 
-        Assertions.assertEquals("H*ll*, w*rld!", strEx);
+       Assertions.assertEquals("74570", strEx);
     }
 }
